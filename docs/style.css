@@ -272,7 +272,7 @@ main {
     margin: 0;
 
     font-family: "DotGothic16", sans-serif;
-    font-size: clamp(50px, 10vw, 120px);
+    font-size: clamp(25px, 10vw, 120px);
     font-weight: 700;
     letter-spacing: 10px;
     color: white;
