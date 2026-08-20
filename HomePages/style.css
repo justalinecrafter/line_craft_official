@@ -1,0 +1,520 @@
+```css
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "LINE Seed JP", sans-serif;
+    background: #ffffff;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+/* =========================
+   固定ヘッダー
+========================= */
+
+/* ヘッダー */
+
+/* ヘッダー */
+
+#contact-form{
+    background: #F2F2F2;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 90px;
+
+    background: #b4b4b4;
+    border-bottom: 2px solid #131313;
+
+    z-index: 9999;
+}
+
+
+/* ロゴ */
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    display: block;
+    max-height: 80px;
+    width: auto;
+}
+
+
+/* メニューボタン */
+
+.menu-button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: #ffffff;
+}
+
+
+/* =========================
+   メニュー
+========================= */
+
+/* 右側から出てくるメニュー */
+
+.side-menu {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    padding-top: 90px;
+
+    background: white;
+    border-left: 1px solid #ddd;
+
+    z-index: 10000;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+
+/* メニューを開いた状態 */
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.close-button {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #222;
+
+    cursor: pointer;
+}
+
+
+/* メニュー項目 */
+
+.side-menu a {
+    display: block;
+
+    padding: 20px 30px;
+
+    color: #222;
+    text-decoration: none;
+
+    border-bottom: 1px solid #eee;
+}
+
+.side-menu a:hover {
+    background: #f5f5f5;
+}
+
+/* =========================
+   メイン
+========================= */
+
+main {
+    padding-top: 50px;
+}
+
+
+/* =========================
+   トップ
+========================= */
+
+.hero-content {
+    text-align: center;
+}
+
+
+.hero {
+    min-height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+
+    position: relative;
+
+    background-image: url("images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 30px;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(114, 113, 113, 0.3) 0%,
+        rgba(114, 113, 113, 0.2) 75%,
+        rgba(255, 255, 255, 0.4) 90%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+
+/* #contact_hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(114, 113, 113, 0.3) 0%,
+        rgba(114, 113, 113, 0.2) 75%,
+        rgba(255, 255, 255, 0.4) 90%,
+        #9a9a9a 100%
+    );
+} */
+
+/* .hero::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+
+    background: #222;
+} */
+
+.hero h1 {
+    margin: 0;
+
+    font-family: "DotGothic16", sans-serif;
+    font-size: clamp(50px, 10vw, 120px);
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: white;
+}
+
+
+
+/* =========================
+   セクション
+========================= */
+
+.section {
+    max-width: 85%;
+    min-height: 20px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.section h2 {
+    margin: 0 0 30px;
+    font-size: 45px;
+}
+
+.section h3 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+#news_link {
+    font-size: 50px;
+    color: #009999;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icon {
+    width: 160px;
+    height: 160px;
+}
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 20px;
+}
+
+.timeline-item h3 {
+    width: 300px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.timeline-item p {
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #363636;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: #e8e1fa;
+}
+
+/* ====================
+   News
+==================== */
+
+#postList {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.news-post {
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    background-color: #fff;
+
+    box-sizing: border-box;
+}
+
+.news-post time {
+    display: block;
+
+    font-size: 18px;
+    color: #07853b;
+
+    margin-bottom: 8px;
+}
+
+.news-post p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.news-post a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.news-post a:hover {
+    text-decoration: underline;
+}
+.news-post span {
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.reaction-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.reaction-button {
+    border-radius: 10px;
+    border: none;
+    background: #ececec;
+
+    padding: 4px 6px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.reaction-button:hover {
+    opacity: 0.7;
+}
+
+.post-stats {
+    margin-top: 15px;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-form {
+    width: 100%;
+    height: 950px;
+    margin: 80px auto 0;
+    overflow: hidden;
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* =========================
+   スマートフォン
+========================= */
+
+@media (max-width: 600px) {
+
+
+    .hero {
+    min-height: 25vh;
+    }
+
+    .section {
+        padding: 10px 20px;
+        max-width: 90%;
+    }
+
+    .section h2 {
+        margin: 0 0 25px;
+        font-size: 30px;
+
+    }
+
+    .section h3 {
+    margin: 0 0 20px;
+
+    font-size: 20px;
+    font-weight: 300;
+    }
+
+    .social-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    }
+
+    .timeline {
+    gap: 5px;
+    }
+
+    .timeline-item h3 {
+    width: 180px;
+    }
+
+    #news_link {
+    font-size: 40px;
+    }
+
+    .news-post time {
+    font-size: 16px;
+
+    }
+
+    .reaction-button {
+    font-size: 9px;
+    }   
+}
