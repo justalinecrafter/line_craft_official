@@ -512,7 +512,7 @@ main {
     font-size: clamp(8px, 4vw, 120px);
     }
 
-    .section a {
+    .section-link {
     font-size: clamp(10px, 8vw, 120px);
     }
 
