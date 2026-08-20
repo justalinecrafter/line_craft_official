@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LineCraft</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=LINE+Seed+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 固定ヘッダー -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="LineCraft">
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+    <!-- メニュー -->
+    <nav class="side-menu" id="sideMenu">
+
+        <button class="close-button" id="closeButton" aria-label="メニューを閉じる">
+            ×
+        </button>
+
+        <a href="index.html">ホーム</a>
+        <a href="#">最新情報</a>
+        <a href="contact.html">コンタクト</a>
+
+    </nav>
+
+
+    <!-- メインコンテンツ -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>最新情報</h1>
+
+            </div>
+        </section>
+
+        <section class="section">
+
+            <h2>News</h2>
+
+            <div id="postList"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <a href="https://www.youtube.com/@jerashianMC" target="_blank" rel="noopener">SUBSCRIBE @jerashianMC</a>
+    </footer>
+
+
+<script type="module" src="news.js"></script>
+<script type="module" src="common.js"></script>
+
+</body>
+</html>
+
