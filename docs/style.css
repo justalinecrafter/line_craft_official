@@ -272,7 +272,7 @@ main {
     margin: 0;
 
     font-family: "DotGothic16", sans-serif;
-    font-size: clamp(25px, 10vw, 120px);
+    font-size: clamp(10px, 10vw, 120px);
     font-weight: 700;
     letter-spacing: 10px;
     color: white;
@@ -303,7 +303,7 @@ main {
 }
 
 
-#news_link {
+.section-link {
     font-size: 50px;
     color: #009999;
     text-decoration: none;
@@ -325,7 +325,6 @@ main {
 }
 
 
-
 .timeline {
     display: flex;
     flex-direction: column;
@@ -333,23 +332,21 @@ main {
 }
 
 .timeline-item {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 300;
     display: flex;
     gap: 20px;
 }
 
 .timeline-item h3 {
     width: 300px;
-    margin: 0;
-    flex-shrink: 0;
 }
 
 .timeline-item p {
     margin: 0;
     margin-bottom: 0px;
 }
-
-
-
 
 .footer {
     padding: 20px;
@@ -502,11 +499,15 @@ main {
     }
 
     .timeline-item h3 {
-    width: 180px;
+    width: 170px;
     }
 
-    #news_link {
-    font-size: 40px;
+    .timeline-item {
+    font-size: clamp(8px, 4vw, 120px);
+    }
+
+    .section a {
+    font-size: clamp(10px, 8vw, 120px);
     }
 
     .news-post time {
