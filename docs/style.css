@@ -422,7 +422,7 @@ main {
 
 .reaction-buttons {
     display: flex;
-    gap: 8px;
+    gap: 4px;
 }
 
 .reaction-button {
@@ -430,9 +430,9 @@ main {
     border: none;
     background: #ffffff;
 
-    padding: 4px 8px;
+    padding: 4px 6px;
 
-    font-size: 12px;
+    font-size: 10px;
 
     cursor: pointer;
 }
