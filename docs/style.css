@@ -527,5 +527,6 @@ main {
 
     .reaction-button {
     font-size: 9px;
+    white-space: nowrap;
     }   
 }
