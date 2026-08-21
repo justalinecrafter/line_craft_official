@@ -346,7 +346,7 @@ main {
 .timeline-item p {
     margin: 0;
     text-align: left;
-    width: 300px;
+    width: 500px;
 }
 
 .footer {
@@ -506,6 +506,10 @@ main {
 
     .timeline-item h3 {
     width: 170px;
+    }
+
+    .timeline-item p {
+    width: 300px;
     }
 
     .timeline-item {
