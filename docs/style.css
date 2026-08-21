@@ -428,9 +428,9 @@ main {
 .reaction-button {
     border-radius: 10px;
     border: none;
-    background: #ececec;
+    background: #ffffff;
 
-    padding: 4px 6px;
+    padding: 4px 8px;
 
     font-size: 12px;
 

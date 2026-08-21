@@ -77,7 +77,7 @@ snapshot.forEach(async (post) => {
             <div class="reaction-buttons">
 
                 <button class="reaction-button love-button">
-                    超高評価 <span>${love}</span>
+                    神評価 <span>${love}</span>
                 </button>
 
                 <button class="reaction-button like-button">
@@ -89,7 +89,7 @@ snapshot.forEach(async (post) => {
                 </button>
 
                 <button class="reaction-button hate-button">
-                    最低評価 <span>${hate}</span>
+                    酷評価 <span>${hate}</span>
                 </button>
 
             </div>
@@ -100,7 +100,7 @@ snapshot.forEach(async (post) => {
 
         <div class="post-stats">
             <span class="impression-count">
-                👁 ${impressions}
+                読み込み数 ${impressions}
             </span>
         </div>
     `;
